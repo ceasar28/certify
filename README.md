@@ -1,1 +1,1 @@
-# LMS-YC-2-W3
+# Certify, a dapp that tokenize certificate
