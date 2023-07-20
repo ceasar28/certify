@@ -1,0 +1,47 @@
+module.exports = async function (data) {
+  const { name, course } = data;
+  const issueDate = new Date().toDateString();
+  const html = `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; ">
+        <div
+            style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid #F8A711; display: flex; justify-content: center; align-items: center; background-color: #C8C8C8;  ">
+            <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #F8A711">
+                <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+                <br><br>
+                <span style="font-size:25px"><i>This is to certify that</i></span>
+                <br><br>
+                <span style="font-size:30px"><b>${name}</b></span><br /><br />
+                <span style="font-size:25px"><i>has completed the course</i></span> <br /><br />
+                <span style="font-size:30px">${course}</span> <br /><br /> <br /><br />
+                <span style="font-size:25px"><i>dated</i></span><br>
+                <span style="font-size:30px">${issueDate}</span><br /><br />
+                <br /><br /> <br /><br />
+                <button
+                    style="background-color: #F8A711; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" />
+                    </svg>
+                    Learn.Z
+                </button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+`;
+
+  return html;
+};
