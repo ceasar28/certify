@@ -1,9 +1,15 @@
+const hre = require("hardhat");
 const main = async () => {
   const nftContractFactory = await hre.ethers.getContractFactory(
     "CertificateNFT"
   );
-  const nftContract = await nftContractFactory.deploy();
-  await nftContract.deployed();
+  //   const nftContract = await nftContractFactory.deploy();
+  //   await nftContract.deployed();
+  //   console.log("Contract deployed to:", nftContract.address);
+  //   const lockedAmount = hre.ethers.parseEther("0.001");
+  const nftContract = await hre.ethers.deployContract("CertificateNFT");
+
+  await nftContract.waitForDeployment();
   console.log("Contract deployed to:", nftContract.address);
 
   // Call the function.

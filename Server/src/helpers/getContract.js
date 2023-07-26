@@ -3,7 +3,7 @@ require("dotenv").config();
 const leanZnftContract = require("../utils/certificate-nft-abi.json");
 
 module.exports = async function () {
-  const CONTRACT_ADDRESS = "0x6439B124574BC91A45575F7a111745CFe59b2A17";
+  const CONTRACT_ADDRESS = "0x4d29B7be09a3a975eaD9e803312Fec17E7Eb88EB";
 
   const NodeUrl = process.env.QUICKNODE_API_KEY_URL;
 

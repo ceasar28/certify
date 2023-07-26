@@ -22,7 +22,7 @@ module.exports = async function (data) {
     });
     const page = await browser.newPage();
 
-    await page.setContent(html2);
+    await page.setContent(html);
     //   await page.addStyleTag({ content: css });
 
     // Adjust the viewport size if necessary

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #292929;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        div.loader {
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.loader .dot {
+            /* width: 25px;
+            height: 25px;
+            background-color: #f5dc00; */
+            /* border-radius: 100%; */
+            color: #f5dc00;
+            margin: 0 3px;
+            animation: loading 1s linear infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        @keyframes loading {
+            0% {
+                transform: translateY(-20px);
+            }
+
+            25%,
+            75% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="loader">
+            <h1 class="dot" style="--i:4">E</h1>
+            <h1 class="dot" style="--i:3">K</h1>
+            <h1 class="dot" style="--i:2">E</h1>
+            <h1 class="dot" style="--i:1">T</h1>
+            <h1 class="dot" style="--i:0">E</h1>
+        </div>
+    </section>
+</body>
+
+</html>

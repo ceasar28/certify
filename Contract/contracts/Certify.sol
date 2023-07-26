@@ -12,7 +12,7 @@ contract CertificateNFT is ERC721URIStorage {
 
     event CertificateClaimed(uint256 indexed tokenId);
 
-    constructor() ERC721("LearnZNfts", "LZT") {
+    constructor() ERC721("LearnableWeb3iNfts", "LWT") {
         console.log("This is my NFT contract. Woah!");
     }
 
