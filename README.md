@@ -1,1 +1,1 @@
-# Certify, a dapp that tokenize certificate
+# Certify, a dapp that tokenize certificate into NFTS 
